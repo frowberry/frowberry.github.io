@@ -2,8 +2,46 @@
 <html>
 	<head>
 		<title>testing</title>
+		<style>
+			html {
+				font-family: Helvetica;
+			}
+			p {
+				margin: 1em 0;
+				font-family: Georgia;		
+			}
+			span {
+				font-family: arial;	
+			}
+			.flicker  {
+					
+			}
+			button {
+				background-color: green;
+				border: none;
+				transition: all .5s;
+				color: blue;
+				padding: 1em;
+			}
+			button:hover {
+				background-color: blue;
+			}
+
+			.glitchy {
+				animation: noisey .1s linear infinite;
+			}
+
+			@keyframes noisey {
+				0%, 50%, 100% {opacity: 0;}
+				25%, 75% {opacity: 1;}
+			}
+		</style>
 	</head>
 	<body>
-		<h1>AbacusB</h1>
+		<h1 class="glitchy">AbacusB</h1>
+		<hr>
+		<div class="glitchy">heyo</div>
+		<p>Hi my name is Foster Rowberry</p>
+		<button>click me!</button>
 	</body>
 </html>

@@ -5,6 +5,12 @@
 		<style>
 			html {
 				font-family: Helvetica;
+				background: linear-gradient(#111, #000);
+				height: 100%;
+				user-select: none;
+			}
+			h1 {
+				letter-spacing: 2px
 			}
 			p {
 				margin: 1em 0;
@@ -13,36 +19,27 @@
 			span {
 				font-family: arial;	
 			}
-			.flicker  {
-					
+			hr {
+				width: 50%;
+				border-style: solid;
+				border-color: #222;
 			}
-			button {
-				background-color: green;
-				border: none;
-				transition: all .5s;
-				color: blue;
-				padding: 1em;
-			}
-			button:hover {
-				background-color: blue;
-			}
-
 			.blinky {
-				animation: noisey .5s step-end infinite;
+				animation: noisey .25s step-end infinite;
 				position: relative;
 			}
 
 			@keyframes noisey {
-				0% {opacity: 1;}
-				90% {opacity: 1; left: 3px;}
+				0%  {opacity: 1;}
+				20% {color: teal; top 1px;}
+				40% {color: green; right 2px; top 1px}
+				60% {color: red; opacity: .5;}
+				80% {opacity: 1; left: 1px; top: 1px}
 			}
 		</style>
 	</head>
 	<body>
-		<h1 class="blinky" style="text-align: center">Foster Rowberry</h1>
+		<h1 class="blinky" style="text-align: center; font-family: Consolas;">Foster Rowberry</h1>
 		<hr>
-		<!--<div class="glitchy">heyo</div>*/-->
-		<p>Hi!</p>
-		<button>click me!</button>
 	</body>
 </html>

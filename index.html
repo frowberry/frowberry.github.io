@@ -8,7 +8,7 @@
 			}
 			p {
 				margin: 1em 0;
-				font-family: Georgia;		
+				font-family: Georgia;
 			}
 			span {
 				font-family: arial;	
@@ -27,21 +27,22 @@
 				background-color: blue;
 			}
 
-			.glitchy {
-				animation: noisey .1s linear infinite;
+			.blinky {
+				animation: noisey .5s step-end infinite;
+				position: relative;
 			}
 
 			@keyframes noisey {
-				0%, 50%, 100% {opacity: 0;}
-				25%, 75% {opacity: 1;}
+				0% {opacity: 1;}
+				90% {opacity: 1; left: 3px;}
 			}
 		</style>
 	</head>
 	<body>
-		<h1 class="glitchy">AbacusB</h1>
+		<h1 class="blinky" style="text-align: center">Foster Rowberry</h1>
 		<hr>
-		<div class="glitchy">heyo</div>
-		<p>Hi my name is Foster Rowberry</p>
+		<!--<div class="glitchy">heyo</div>*/-->
+		<p>Hi!</p>
 		<button>click me!</button>
 	</body>
 </html>
